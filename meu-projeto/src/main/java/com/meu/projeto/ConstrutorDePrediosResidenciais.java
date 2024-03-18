@@ -14,11 +14,11 @@ class ConstrutorDePrediosResidenciais implements ConstrutorDePredios{
         System.out.println("Construindo estrutura do prédio residencial...\n");
         Scanner Scanner = new Scanner(System.in);
         System.out.println("Informe o tipo do prédio: ");
-        predio.setTipo(Scanner.nextLine());
+        predio.setTipo(Scanner.next());
         System.out.println("\nInfome o número de andares: ");
         predio.setNumAndares(Scanner.nextInt());
         System.out.println("\nInforme o material do prédio: ");
-        predio.setMaterial(Scanner.nextLine());
+        predio.setMaterial(Scanner.next());
         Scanner.close();
     }
 
