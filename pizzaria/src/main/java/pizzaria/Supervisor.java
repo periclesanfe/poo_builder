@@ -11,9 +11,6 @@ class Supervisor {
 
     public Pizza construirPizza(){
         construtorDePizzas.prepararMassa();
-        construtorDePizzas.adicionarMolho();
-        construtorDePizzas.adicionarCobertura();
-        construtorDePizzas.adicionarBordaRecheada();
         return construtorDePizzas.getPizza();
     }
 }

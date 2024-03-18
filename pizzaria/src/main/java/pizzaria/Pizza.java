@@ -8,9 +8,6 @@ public class Pizza {
 
     interface ConstrutorDePizzas {
         void prepararMassa();
-        void adicionarMolho();
-        void adicionarCobertura();
-        void adicionarBordaRecheada();
         Pizza getPizza();
     }
 
