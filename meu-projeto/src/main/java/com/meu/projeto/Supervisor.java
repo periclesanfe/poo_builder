@@ -1,13 +1,11 @@
 package com.meu.projeto;
 
-import com.meu.projeto.Predio.ConstrutorDePredios;
-
 public class Supervisor {
-    private ConstrutorDePredios construtorDePredios;
+    private ContrutorPredioProtocolo construtorDePredios;
     
-    public void setConstrutorDePredios(ConstrutorDePredios construtorDePredios) {
+    public void setConstrutorDePredios(ContrutorPredioProtocolo construtorDePredios) {
         this.construtorDePredios = construtorDePredios;
-    }
+    } 
 
     public Predio construirPredio(){
         construtorDePredios.construirEstrutura();

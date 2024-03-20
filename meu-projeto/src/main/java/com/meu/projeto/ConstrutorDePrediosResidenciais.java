@@ -1,9 +1,8 @@
 package com.meu.projeto;
 
-import com.meu.projeto.Predio.ConstrutorDePredios;
 import java.util.Scanner;
 
-class ConstrutorDePrediosResidenciais implements ConstrutorDePredios{
+class ConstrutorDePrediosResidenciais implements ContrutorPredioProtocolo {
     private Predio predio;
     Scanner Scanner = new Scanner(System.in);
 
@@ -30,7 +29,7 @@ class ConstrutorDePrediosResidenciais implements ConstrutorDePredios{
         predio.setSistemaTelevisao();
     }
 
-    public void construirUtilidades() {
+    public void construirUtilidades() { 
         System.out.println("Construindo utilidades no prédio residencial...\n");
         predio.setElevador(" elevador social e de serviço.");
         predio.setPortaria("Portaria eletrônica e porteiro em horário comercial.");

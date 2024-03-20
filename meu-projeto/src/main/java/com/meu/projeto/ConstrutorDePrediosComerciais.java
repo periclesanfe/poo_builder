@@ -1,11 +1,10 @@
 package com.meu.projeto;
 
-import com.meu.projeto.Predio.ConstrutorDePredios;
 import java.util.Scanner;
 
-public class ConstrutorDePrediosComerciais implements ConstrutorDePredios{
+public class ConstrutorDePrediosComerciais implements ContrutorPredioProtocolo {
     private Predio predio;
-    Scanner Scanner = new Scanner(System.in);
+    Scanner Scanner = new Scanner(System.in); 
 
     public ConstrutorDePrediosComerciais() {
         this.predio = new Predio();

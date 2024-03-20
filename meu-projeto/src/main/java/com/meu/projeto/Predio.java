@@ -7,7 +7,7 @@ public class Predio {
     private String decoracao;
     private String elevador;
     private String portaria;
-    private boolean areaComum;
+    private boolean areaComum; 
     private boolean sistemaEletrico;
     private boolean sistemaHidraulico;
     private boolean pinturaExterna;
@@ -18,15 +18,6 @@ public class Predio {
     private boolean sistemaInternet;
     private boolean sistemaTelevisao;
     private boolean estacionamento;
-
-    interface ConstrutorDePredios {
-        void construirEstrutura();
-        void instalarSistemas();
-        void construirUtilidades();
-        void finalizar();
-        Predio getPredio();
-        void closeScanner();
-    }
 
     public String GET() {
         String retorno = "Estrutura principal:\n- Tipo: " + this.nomTipo + "\n- Andares: " + this.numAndares + "\n- Material: " + this.nomMaterial + "\n- Elevador: "+this.elevador+"\n- Portaria: " + this.portaria + "\n- Decoração: " + this.decoracao + "\n";

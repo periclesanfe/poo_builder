@@ -1,7 +1,7 @@
 package com.meu.projeto;
 import java.util.Scanner;
 
-public class App {
+public class App { 
     public static void main(String[] args) {
         String tipo;
         Supervisor supervisor = new Supervisor();
@@ -16,10 +16,10 @@ public class App {
 
         
         if (tipo.equals("comercial")) {
-            ConstrutorDePrediosComerciais construtor = new ConstrutorDePrediosComerciais();
+            ContrutorPredioProtocolo construtor = new ConstrutorDePrediosComerciais();
             supervisor.setConstrutorDePredios(construtor);
         } else if (tipo.equals("residencial")){
-            ConstrutorDePrediosResidenciais construtor = new ConstrutorDePrediosResidenciais();
+            ContrutorPredioProtocolo construtor = new ConstrutorDePrediosResidenciais();
             supervisor.setConstrutorDePredios(construtor);
         }
         
