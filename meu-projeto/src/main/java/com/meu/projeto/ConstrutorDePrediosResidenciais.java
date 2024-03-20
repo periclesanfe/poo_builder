@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 class ConstrutorDePrediosResidenciais implements ConstrutorDePredios{
     private Predio predio;
+    Scanner Scanner = new Scanner(System.in);
 
     public ConstrutorDePrediosResidenciais() {
         this.predio = new Predio();
@@ -13,12 +14,10 @@ class ConstrutorDePrediosResidenciais implements ConstrutorDePredios{
     public void construirEstrutura() {
         predio.setTipo("Comercial");
         System.out.println("Construindo estrutura do prédio residencial...\n");
-        Scanner Scanner = new Scanner(System.in);
-        System.out.println("\nInfome o número de andares: ");
+        System.out.println("Infome o número de andares: ");
         predio.setNumAndares(Scanner.nextInt());
-        System.out.println("\nInforme o material do prédio: ");
+        System.out.println("Informe o material do prédio: ");
         predio.setMaterial(Scanner.next());
-        Scanner.close();
     }
 
     public void instalarSistemas() {
@@ -33,7 +32,7 @@ class ConstrutorDePrediosResidenciais implements ConstrutorDePredios{
 
     public void construirUtilidades() {
         System.out.println("Construindo utilidades no prédio residencial...\n");
-        predio.setElevador(" elevadore social e de serviço.");
+        predio.setElevador(" elevador social e de serviço.");
         predio.setPortaria("Portaria eletrônica e porteiro em horário comercial.");
         predio.setAreaComum();
         predio.setEstacionamento();
@@ -48,5 +47,9 @@ class ConstrutorDePrediosResidenciais implements ConstrutorDePredios{
 
     public Predio getPredio() {
         return predio;
+    }
+
+    public void closeScanner() {
+        Scanner.close();
     }
 }

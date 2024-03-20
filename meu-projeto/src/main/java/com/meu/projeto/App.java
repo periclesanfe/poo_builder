@@ -14,8 +14,7 @@ public class App {
             tipo = Scanner.next();
         }
 
-        Scanner.close();
-
+        
         if (tipo.equals("comercial")) {
             ConstrutorDePrediosComerciais construtor = new ConstrutorDePrediosComerciais();
             supervisor.setConstrutorDePredios(construtor);
@@ -23,9 +22,10 @@ public class App {
             ConstrutorDePrediosResidenciais construtor = new ConstrutorDePrediosResidenciais();
             supervisor.setConstrutorDePredios(construtor);
         }
-
+        
         Predio predio = supervisor.construirPredio();
         System.out.println(predio.GET());
+        Scanner.close();
     }
 }
 

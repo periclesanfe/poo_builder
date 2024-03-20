@@ -12,7 +12,10 @@ public class Supervisor {
     public Predio construirPredio(){
         construtorDePredios.construirEstrutura();
         construtorDePredios.instalarSistemas();
+        construtorDePredios.construirUtilidades();
         construtorDePredios.finalizar();
+        construtorDePredios.closeScanner();
         return construtorDePredios.getPredio();
+
     }
 }

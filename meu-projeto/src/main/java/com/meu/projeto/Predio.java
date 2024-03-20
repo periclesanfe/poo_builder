@@ -25,20 +25,22 @@ public class Predio {
         void construirUtilidades();
         void finalizar();
         Predio getPredio();
+        void closeScanner();
     }
 
     public String GET() {
-        String retorno = "- Tipo: " + this.nomTipo + "\n- Andares: " + this.numAndares + "\n- Material: " + this.nomMaterial + "\n- Elevador: "+this.elevador+"\n- Portaria: " + this.portaria + "\n- Decoração: " + this.decoracao;
-        if (this.areaComum) {System.out.println("O prédio conta com uma área comum para os moradores, com piscina e parquinho infantil.");}
-        if (this.sistemaEletrico) {System.out.println("O prédio conta com sistema elétrico.");}
-        if (this.sistemaHidraulico) {System.out.println("O prédio conta com sistema hidráulico.");}
-        if (this.pinturaExterna && this.pinturaInterna) {System.out.println("O prédio conta com pintura interna e externa.");}
-        if (this.sistemaPrevencaoIncendio) {System.out.println("O prédio conta com sistema de prevenção de incêndio.");}
-        if (this.sistemaSeguranca) {System.out.println("O prédio conta com sistema de segurança.");}
-        if (this.sistemaArCondicionado) {System.out.println("O prédio conta com sistema de ar condicionado.");}
-        if (this.sistemaInternet) {System.out.println("O prédio conta com sistema de internet.");}
-        if (this.sistemaTelevisao) {System.out.println("O prédio conta com sistema de televisão.");}
-        if (this.estacionamento) {System.out.println("O prédio conta com estacionamento.");}
+        String retorno = "Estrutura principal:\n- Tipo: " + this.nomTipo + "\n- Andares: " + this.numAndares + "\n- Material: " + this.nomMaterial + "\n- Elevador: "+this.elevador+"\n- Portaria: " + this.portaria + "\n- Decoração: " + this.decoracao + "\n";
+        retorno += "Sistemas:\n";
+        if (this.areaComum) {retorno += "- Área comum para os moradores, com piscina e parquinho infantil.\n";}
+        if (this.sistemaEletrico) {retorno += "- Sistema elétrico.\n";}
+        if (this.sistemaHidraulico) {retorno += "- Sistema hidráulico.\n";}
+        if (this.pinturaExterna && this.pinturaInterna) {retorno += "- Pintura interna e externa.\n";}
+        if (this.sistemaPrevencaoIncendio) {retorno += "- Sistema de prevenção de incêndio.\n";}
+        if (this.sistemaSeguranca) {retorno += "- Sistema de segurança.\n";}
+        if (this.sistemaArCondicionado) {retorno += "- Sistema de ar condicionado.\n";}
+        if (this.sistemaInternet) {retorno += "- Sistema de internet.\n";}
+        if (this.sistemaTelevisao) {retorno += "- Sistema de televisão.\n";}
+        if (this.estacionamento) {retorno += "- Estacionamento.\n";}
         return retorno;
     }
 
